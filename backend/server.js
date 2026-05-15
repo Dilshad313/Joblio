@@ -265,7 +265,7 @@ let server = null;
 const startServer = async () => {
   try {
     // Initialize database connection
-    await initDB();
+    await connectDB();
     
     // Start listening
     server = app.listen(PORT, () => {
